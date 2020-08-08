@@ -318,6 +318,27 @@
         ""
       ],
       "Type": "Property"
+    },
+    {
+      "Name": "Dex2oatThreads",
+      "Path": "vendor.powerhal.dalvik.vm.dex2oat-threads",
+      "Values": [
+        "1",
+        "2",
+        "4",
+        "6"
+      ],
+      "Type": "Property"
+    },
+    {
+      "Name": "Dex2oatCPUSet",
+      "Path": "vendor.powerhal.dalvik.vm.dex2oat-cpu-set",
+      "Values": [
+        "4,5",
+        "2,3,4,5",
+        "0,1,2,3,4,5,7"
+      ],
+      "Type": "Property"
     }
   ],
   "Actions": [
@@ -950,6 +971,67 @@
       "Node": "CPUBigPlusClusterMaxFreq",
       "Duration": 3600000,
       "Value": "2649600"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_LIGHT",
+      "Node": "Dex2oatThreads",
+      "Duration": 0,
+      "Value": "4"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_LIGHT",
+      "Node": "Dex2oatCPUSet",
+      "Duration": 0,
+      "Value": "2,3,4,5"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_MODERATE",
+      "Node": "Dex2oatThreads",
+      "Duration": 0,
+      "Value": "2"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_MODERATE",
+      "Node": "Dex2oatCPUSet",
+      "Duration": 0,
+      "Value": "2,3,4,5"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_SEVERE",
+      "Node": "Dex2oatThreads",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_SEVERE",
+      "Node": "Dex2oatCPUSet",
+      "Duration": 0,
+      "Value": "4,5"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_CRITICAL",
+      "Node": "Dex2oatThreads",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_CRITICAL",
+      "Node": "Dex2oatCPUSet",
+      "Duration": 0,
+      "Value": "4,5"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_EMERGENCY",
+      "Node": "Dex2oatThreads",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "THERMAL_skin-therm-monitor_EMERGENCY",
+      "Node": "Dex2oatCPUSet",
+      "Duration": 0,
+      "Value": "4,5"
     }
+
   ]
 }
