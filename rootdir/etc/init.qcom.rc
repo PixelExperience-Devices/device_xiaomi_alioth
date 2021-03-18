@@ -362,6 +362,8 @@ on post-fs-data
 
     mkdir /data/vendor/secure_element 0777 system system
 
+    mkdir /data/vendor/nfc 0770 nfc nfc
+
     # Mark the copy complete flag to not completed
     write /data/vendor/radio/copy_complete 0
     chown radio radio /data/vendor/radio/copy_complete
