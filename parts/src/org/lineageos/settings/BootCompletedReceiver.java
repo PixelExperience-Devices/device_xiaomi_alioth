@@ -25,7 +25,7 @@ import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
-
+import org.lineageos.settings.touchsampling.TouchSamplingUtils;
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     private static final boolean DEBUG = false;
@@ -36,5 +36,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         DozeUtils.checkDozeService(context);
         ThermalUtils.startService(context);
+        TouchSamplingUtils.restoreSamplingValue(context);
     }
 }

@@ -32,4 +32,9 @@
     <!-- Raise to wake strings-->
     <string name="raise_to_wake_gesture_title">Raise to wake</string>
     <string name="raise_to_wake_gesture_summary">Wake up the device instead of pulsing notification</string>
+
+    <!-- High Touch Polling -->
+    <string name="htsr_title">Touch Responsiveness</string>
+    <string name="htsr_enable_title">Increase Touch Responsiveness</string>
+    <string name="htsr_enable_summary">Increases touch polling rate to decrease latency</string>    
 </resources>
