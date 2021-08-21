@@ -19,6 +19,5 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Whether device has a notch -->
-    <bool name="config_haveNotch">true</bool>
+    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>
-
