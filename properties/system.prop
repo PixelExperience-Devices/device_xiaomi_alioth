@@ -54,3 +54,6 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Notch Overlay
 ro.miui.notch=1
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
