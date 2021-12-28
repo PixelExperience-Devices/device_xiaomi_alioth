@@ -199,6 +199,7 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.paneltype=2
 ro.vendor.display.sensortype=2
+debug.sdm.support_writeback=0
 vendor.display.comp_mask=0
 vendor.display.defer_fps_frame_count=2
 vendor.display.disable_excl_rect_partial_fb=1
