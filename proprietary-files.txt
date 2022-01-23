@@ -48,8 +48,10 @@ vendor/lib/rfsa/adsp/misound_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
+# Audio-Hardware (Pinned from MIUI CN Beta V13.0.0.1.6 DEV)
+vendor/lib/hw/audio.primary.kona.so|6ed8adcbf700f8b66681f782f1b620a675c58877
+
 # Audio-Hardware
-vendor/lib/hw/audio.primary.kona.so
 vendor/lib/vndk/libxlog.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libaudio_log_utils.so
