@@ -33,6 +33,18 @@ static const variant_info_t alioth_global_info = {
     .nfc = true,
 };
 
+static const variant_info_t alioth_eea_info = {
+    .hwc_value = "EEA",
+    .sku_value = "",
+
+    .brand = "POCO",
+    .device = "alioth",
+    .marketname = "POCO F3",
+    .model = "M2012K11AG",
+
+    .nfc = true,
+};
+
 static const variant_info_t alioth_info = {
     .hwc_value = "",
     .sku_value = "",
@@ -48,6 +60,7 @@ static const variant_info_t alioth_info = {
 static const std::vector<variant_info_t> variants = {
     aliothin_info,
     alioth_global_info,
+    alioth_eea_info,
     alioth_info,
 };
 
