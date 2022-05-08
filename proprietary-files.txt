@@ -14,6 +14,7 @@ vendor/etc/acdbdata/adsp_avs_config.acdb
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
+vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
@@ -422,6 +423,7 @@ vendor/lib64/libmulticam_video_optical_zoom.so
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfastcvdsp_stub.so
