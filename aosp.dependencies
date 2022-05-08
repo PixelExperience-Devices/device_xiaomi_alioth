@@ -10,5 +10,11 @@
    "target_path" : "vendor/xiaomi/alioth",
    "remote"      : "pixel-devices-blobs",
    "branch"      : "twelve"
+ },
+ {
+   "repository"  : "vendor_xiaomi-firmware",
+   "target_path" : "vendor/xiaomi-firmware",
+   "remote"      : "pixel-devices-blobs",
+   "branch"      : "twelve"
  }
 ]
