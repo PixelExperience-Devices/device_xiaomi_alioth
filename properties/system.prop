@@ -57,3 +57,6 @@ ro.miui.notch=1
 
 # Disable vsync for cpu rendered apps
 debug.cpurend.vsync=false
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false
