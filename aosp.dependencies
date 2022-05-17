@@ -9,12 +9,12 @@
    "repository"  : "vendor_xiaomi_alioth",
    "target_path" : "vendor/xiaomi/alioth",
    "remote"      : "pixel-devices-blobs",
-   "branch"      : "twelve"
+   "branch"      : "twelve-wip"
  },
  {
    "repository"  : "vendor_xiaomi-firmware",
    "target_path" : "vendor/xiaomi-firmware",
    "remote"      : "pixel-devices-blobs",
-   "branch"      : "twelve"
+   "branch"      : "twelve-wip"
  }
 ]
