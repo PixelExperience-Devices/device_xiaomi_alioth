@@ -66,6 +66,14 @@ persist.vendor.qti.telephony.vt_cam_interface=2
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
 
+# RIL Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
