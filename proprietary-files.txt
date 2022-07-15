@@ -1128,6 +1128,13 @@ vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
+# Sensors (citsensor)
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+
 # Sensors configs
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/bu27030_0_back.json
