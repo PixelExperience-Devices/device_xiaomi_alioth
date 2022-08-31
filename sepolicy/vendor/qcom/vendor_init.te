@@ -1,0 +1,6 @@
+# Allow init.qcom.usb.sh to create files in uvc.0
+allow vendor_qti_init_shell configfs:dir create_dir_perms;
+allow vendor_qti_init_shell configfs:{
+  file
+  lnk_file
+} create_file_perms;
