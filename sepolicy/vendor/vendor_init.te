@@ -2,6 +2,9 @@ set_prop(vendor_init, vendor_alarm_boot_prop)
 set_prop(vendor_init, vendor_power_prop)
 set_prop(vendor_init, vendor_video_prop)
 
+# Allow vendor init to set SSR property
+set_prop(vendor_init, vendor_ssr_prop)
+
 allow vendor_init {
   proc_dirty
   proc
