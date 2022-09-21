@@ -9,3 +9,6 @@ allow init proc_last_kmsg:file {
 };
 
 allow init adsprpcd_file:file mounton;
+
+# Allow init to set read_ahead_kb on /data partition
+allow init vendor_sysfs_scsi_host:file w_file_perms;
