@@ -45,5 +45,9 @@ ro.vendor.qti.core_ctl_min_cpu=2
 # Radio
 persist.vendor.radio.report_codec=1
 
+# Radio Video Calling
+persist.vendor.radio.vdp_on_ims_cap=1
+persist.vendor.qti.telephony.vt_cam_interface=2
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
