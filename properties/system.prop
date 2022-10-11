@@ -80,3 +80,7 @@ debug.hwui.skia_atrace_enabled=false
 
 # Pre-Rendering
 ro.vendor.perf.scroll_opt=true
+
+#Enable Blur Props
+ro.sf.blurs_are_expensive=1 \
+ro.surface_flinger.supports_background_blur=1
