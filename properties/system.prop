@@ -72,3 +72,6 @@ debug.cpurend.vsync=false
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
