@@ -23,6 +23,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_alioth
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/alioth_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth|aliothin
