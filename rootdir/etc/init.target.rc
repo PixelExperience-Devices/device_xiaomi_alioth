@@ -170,8 +170,6 @@ on boot
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_count
     chown system system /sys/class/drm/card0-DSI-1/disp_pcc
     chmod 0664 /sys/class/drm/card0-DSI-1/disp_pcc
-    #camera motor
-    chmod 0777 /sys/class/drv8846/ti-drv8846/debug
     chown system system /sys/class/backlight/panel0-backlight/brightness_clone
     chmod 0664 /sys/class/power_supply/battery/dc_thermal_levels
     chown system system /sys/class/thermal/thermal_message/sconfig
