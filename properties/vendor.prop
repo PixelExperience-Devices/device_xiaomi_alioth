@@ -63,6 +63,7 @@ ro.vendor.audio.spk.clean=true
 ro.vendor.audio.spk.stereo=true
 ro.vendor.audio.surround.support=true
 ro.vendor.audio.us.proximity=true
+ro.vendor.audio.support.sound.id=true
 ro.vendor.audio.us.type=mius
 ro.vendor.audio.vocal.support=true
 ro.vendor.audio.voice.change.support=true
