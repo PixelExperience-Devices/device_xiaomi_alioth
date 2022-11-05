@@ -290,7 +290,9 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_foundation \
+    libstagefright_softomx
 
 # Permissions
 PRODUCT_COPY_FILES += \
