@@ -49,12 +49,6 @@
          empty string is passed in -->
     <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
 
-    <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
-         the framework from using higher refresh rates, even if display modes with higher refresh
-         rates are available from hardware composer. Only has an effect if the value is
-         non-zero. -->
-    <integer name="config_defaultPeakRefreshRate">60</integer>
-
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
         percent. The length of this array is assumed to be one greater than
         config_ambientThresholdLevels. The brightening threshold is calculated as
@@ -782,4 +776,14 @@
     <!-- Delay that allows some content to arrive at the display before switching
          from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">32</integer>
+    <!-- Display - Dynamic Refresh Rate Topic -->
+    <!-- The default refresh rate. Alioth manages this using the peak refresh rate setting, so set
+         this value to 0 so it has no effect. -->
+    <integer name="config_defaultRefreshRate">0</integer>
+
+    <!-- The default peak refresh rate for a given device. -->
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+
+    <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
+    <integer name="config_defaultRefreshRateInZone">120</integer>
 </resources>
