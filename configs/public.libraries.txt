@@ -1,3 +1,4 @@
+libqti-perfd-client.so
 libadsprpc.so
 libcdsprpc.so
 libsdsprpc.so
@@ -11,6 +12,8 @@ libHalSuperSensorServer.so 64
 libSuperSensor.so 64
 libSuperSensorCPU.so 64
 libarcsoft_beautyshot.so 64
+libarcsoft_dualcam_refocus_image.so 64
+libarcsoft_dualcam_refocus_video.so 64
 libarcsoft_portrait_lighting.so 64
 libarcsoft_portrait_lighting_c.so 64
 libarcsoft_high_dynamic_range.so 64
@@ -19,6 +22,7 @@ libmialgo_image_colourkeeping.so 64
 libarcsoft_distortion_correction.so 64
 libarcsoft_bodyslim.so 64
 libalCFR.so 64
+libsupermoon.so 64
 libcvp_common.so
 libalhLDC.so 64
 libalAILDC.so 64
