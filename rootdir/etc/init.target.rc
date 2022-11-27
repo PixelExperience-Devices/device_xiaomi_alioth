@@ -100,6 +100,10 @@ on late-fs
     mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs-data
+    # Media XML codecs
+    setprop ro.media.xml_variant.codecs _kona
+    setprop ro.media.xml_variant.codecs_performance _kona
+
     mkdir /vendor/data/tombstones 0771 system system
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
@@ -120,7 +124,6 @@ on post-fs-data
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
     chown gps system /dev/ttyHS1
-
 
 on early-boot
     start vendor.sensors
