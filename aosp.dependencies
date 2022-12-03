@@ -3,24 +3,24 @@
    "repository"  : "device_xiaomi_sm8250-common",
    "target_path" : "device/xiaomi/sm8250-common",
    "remote"      : "pixel-devices",
-   "branch"      : "thirteen"
+   "branch"      : "thirteen-wip"
  },
  {
    "repository"  : "kernel_xiaomi_sm8250",
    "target_path" : "kernel/xiaomi/sm8250",
    "remote"      : "pixel-devices",
-   "branch"      : "thirteen"
+   "branch"      : "thirteen-wip"
  },
  {
    "repository"  : "vendor_xiaomi_alioth",
    "target_path" : "vendor/xiaomi/alioth",
    "remote"      : "pixel-devices-blobs",
-   "branch"      : "thirteen"
+   "branch"      : "thirteen-wip"
  },
  {
    "repository"  : "vendor_xiaomi-firmware",
    "target_path" : "vendor/xiaomi-firmware",
    "remote"      : "pixel-devices-blobs",
-   "branch"      : "thirteen"
+   "branch"      : "thirteen-wip"
  }
 ]
