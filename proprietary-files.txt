@@ -425,6 +425,7 @@ vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
+vendor/lib/libcdsprpc_system.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
@@ -435,6 +436,7 @@ vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
+vendor/lib64/libcdsprpc_system.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
