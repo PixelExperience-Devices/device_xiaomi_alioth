@@ -298,6 +298,10 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.com.android.dataroaming=true
 ro.telephony.default_network=33,33
 
+# Radio Perf
+# RIL Battery Saving off
+persist.vendor.radio.add_power_save=0
+
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
