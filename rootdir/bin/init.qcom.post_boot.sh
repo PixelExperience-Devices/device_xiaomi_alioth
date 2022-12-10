@@ -45,8 +45,8 @@ function 8953_sched_dcvs_eas()
         echo 652800 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 
         #input boost params
-        echo 1401600 > /sys/module/cpu_boost/parameters/input_boost_freq
-        echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
+        # echo 1401600 > /sys/module/cpu_boost/parameters/input_boost_freq
+        # echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
 
         # sched_load_boost as -6 is equivalent to target load as 85. It is per cpu tunable.
         echo -6 >  /sys/devices/system/cpu/cpu0/sched_load_boost
@@ -5757,10 +5757,10 @@ case "$target" in
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
 
 	# configure input boost settings
-	echo "0:1344000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-	echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-	echo "0:1804800 1:0 2:0 3:0 4:2419200 5:0 6:0 7:3187200" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
-	echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
+	# echo "0:1344000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+	# echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+	# echo "0:1804800 1:0 2:0 3:0 4:2419200 5:0 6:0 7:3187200" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
+	# echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
 
 	# configure governor settings for gold cluster
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
