@@ -18,7 +18,7 @@ package {
 }
 
 cc_library {
-    name: "libdisppower-pixel",
+    name: "libdisppower-xiaomi-sm8250",
     proprietary: true,
     srcs: [
         "disp-power/DisplayLowPower.cpp",
@@ -34,7 +34,7 @@ cc_library {
 }
 
 cc_library {
-    name: "libadaptivecpu",
+    name: "libadaptivecpu-xiaomi-sm8250",
     proprietary: true,
     vendor: true,
     srcs: [
@@ -63,7 +63,7 @@ cc_library {
 }
 
 cc_test {
-    name: "libadaptivecpu_test",
+    name: "libadaptivecpu_test-xiaomi-sm8250",
     proprietary: true,
     vendor: true,
     srcs: [
@@ -77,7 +77,7 @@ cc_test {
         "adaptivecpu/tests/WorkDurationProcessorTest.cpp",
     ],
     static_libs: [
-        "libadaptivecpu",
+        "libadaptivecpu-xiaomi-sm8250",
         "libgmock",
         "android.hardware.power-V3-ndk",
     ],
@@ -89,29 +89,21 @@ cc_test {
     test_suites: ["device-tests"],
 }
 
-// Deprecated, do not use
-// Use pixel-power-ext for vendor extension
-cc_library_headers {
-    name: "pixel_power_headers",
-    vendor: true,
-    export_include_dirs: ["hidl"],
-}
-
 cc_binary {
-    name: "android.hardware.power-service.pixel-libperfmgr",
+    name: "android.hardware.power-service.xiaomi-sm8250-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.pixel-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.pixel.xml"],
+    init_rc: ["aidl/android.hardware.power-service.xiaomi-sm8250-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.xiaomi-sm8250.xml"],
     vendor: true,
     shared_libs: [
         "android.hardware.power-V3-ndk",
-        "libadaptivecpu",
+        "libadaptivecpu-xiaomi-sm8250",
         "libbase",
         "libcutils",
         "liblog",
         "libutils",
         "libbinder_ndk",
-        "libdisppower-pixel",
+        "libdisppower-xiaomi-sm8250",
         "libperfmgr",
         "libprocessgroup",
         "pixel-power-ext-V1-ndk",
