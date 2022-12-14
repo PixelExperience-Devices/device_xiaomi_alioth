@@ -31,6 +31,8 @@
 #include "PowerSessionManager.h"
 #include "disp-power/DisplayLowPower.h"
 
+#define TARGET_TAP_TO_WAKE_NODE "/sys/touchpanel/double_tap"
+
 namespace aidl {
 namespace google {
 namespace hardware {
@@ -82,6 +84,9 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
         PowerSessionManager::getInstance()->updateHintMode(toString(type), enabled);
     }
     switch (type) {
+        case Mode::DOUBLE_TAP_TO_WAKE:
+            ::android::base::WriteStringToFile(enabled ? "1" : "0", TARGET_TAP_TO_WAKE_NODE, true);
+            break;
         case Mode::LOW_POWER:
             break;
         case Mode::SUSTAINED_PERFORMANCE:
@@ -94,8 +99,6 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             if (mSustainedPerfModeOn) {
                 break;
             }
-            [[fallthrough]];
-        case Mode::DOUBLE_TAP_TO_WAKE:
             [[fallthrough]];
         case Mode::FIXED_PERFORMANCE:
             [[fallthrough]];
@@ -125,8 +128,8 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
 
 ndk::ScopedAStatus Power::isModeSupported(Mode type, bool *_aidl_return) {
     bool supported = HintManager::GetInstance()->IsHintSupported(toString(type));
-    // LOW_POWER handled insides PowerHAL specifically
-    if (type == Mode::LOW_POWER) {
+    // LOW_POWER and DOUBLE_TAP_TO_WAKE handled insides PowerHAL specifically
+    if (type == Mode::LOW_POWER || type == Mode::DOUBLE_TAP_TO_WAKE) {
         supported = true;
     }
     LOG(INFO) << "Power mode " << toString(type) << " isModeSupported: " << supported;
