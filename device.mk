@@ -442,6 +442,12 @@ PRODUCT_PACKAGES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Gboard paddings
+# Keyboard height ratio and bottom padding in dp for portrait mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.height_ratio=1.075 \
+    ro.com.google.ime.kb_pad_port_b=8
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
