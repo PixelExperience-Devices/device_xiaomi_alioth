@@ -70,8 +70,10 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
+vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
+vendor/lib/libsurround_3mic_proc.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
