@@ -252,6 +252,7 @@ debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 debug.sf.hw=0
 debug.sf.auto_latch_unsignaled=true
 debug.sf.latch_unsignaled=0
+debug.sf.treat_170m_as_sRGB=1
 persist.demo.hdmirotationlock=false
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
