@@ -2748,6 +2748,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         </string-array>
     </carrier_config>
 
+    <carrier_config mcc="334" mnc="020">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
+
     <carrier_config mcc="310" mnc="120">
         <boolean name="rtt_supported_bool" value="true" />
         <boolean name="rtt_upgrade_supported_bool" value="true"/>
