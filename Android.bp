@@ -5,4 +5,11 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/qcom-caf/bootctrl",
+        "hardware/xiaomi",
+        "vendor/qcom/opensource/usb/etc",
+    ],
 }
