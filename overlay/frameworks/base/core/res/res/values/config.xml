@@ -791,4 +791,7 @@
 
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
     <integer name="config_defaultRefreshRateInZone">120</integer>
+
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
 </resources>
